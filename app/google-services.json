@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "185104984195",
+    "firebase_url": "https://classbooster-7f44e.firebaseio.com",
+    "project_id": "classbooster-7f44e",
+    "storage_bucket": "classbooster-7f44e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185104984195:android:0f8f5230a6435e638c53b6",
+        "android_client_info": {
+          "package_name": "com.eduware.classbooster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "185104984195-gv323i08q9nmacncg8sp2g0832mnfgnp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYPPoRfzYirFjjUOx1dEzePKWlEHmbIqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "185104984195-gv323i08q9nmacncg8sp2g0832mnfgnp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
