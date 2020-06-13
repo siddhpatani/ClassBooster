@@ -8,6 +8,15 @@ public class Student {
     private boolean serious;
     private boolean offTask;
     private String name;
+
+    public Student() {
+
+    }
+
+    public Student(String name) {
+        this.setName(name);
+    }
+
     public Student(boolean outgoing, boolean shy, boolean badEyesight, boolean serious, boolean offTask, String name) {
         this.setOutgoing(outgoing);
         this.setShy(shy);
