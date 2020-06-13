@@ -15,7 +15,7 @@ import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
-
+//asdfasd
 public class Class1Activity extends AppCompatActivity {
 
 //    public static final String NAME_KEY = "Name";
