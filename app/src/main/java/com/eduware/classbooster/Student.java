@@ -17,13 +17,13 @@ public class Student {
         this.setName(name);
     }
 
-    public Student(boolean outgoing, boolean shy, boolean badEyesight, boolean serious, boolean offTask, String name) {
+    public Student(String name, boolean outgoing, boolean shy, boolean badEyesight, boolean serious, boolean offTask) {
+        this(name);
         this.setOutgoing(outgoing);
         this.setShy(shy);
         this.setBadEyesight(badEyesight);
         this.setSerious(serious);
         this.setOffTask(offTask);
-        this.setName(name);
     }
 
 
@@ -73,5 +73,33 @@ public class Student {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public boolean isCompatible(Student other, int priority) {
+        switch (priority) {
+            case 1:
+                return this.isSerious() && other.isOffTask() ||
+                        this.isShy() && other.isOutgoing() ||
+                        this.isOutgoing() && this.isShy() ||
+                        this.isOffTask() && this.isSerious();
+            case 2:
+                return this.isSerious() && other.isOutgoing() ||
+                        this.isShy() && other.isSerious() ||
+                        this.isOutgoing() && this.isOffTask() ||
+                        this.isOffTask() && this.isOutgoing();
+            case 3:
+                return this.isSerious() && other.isShy() ||
+                        this.isShy() && other.isShy() ||
+                        this.isOutgoing() && this.isSerious() ||
+                        this.isOffTask() && this.isShy();
+            default:
+                return this.isSerious() && other.isSerious() ||
+                        this.isOutgoing() && this.isOutgoing();
+        }
+    }
+
+    public boolean isCompatible(Student other, boolean eyesightMatters, int priority) {
+        return eyesightMatters && other.hasBadEyesight() && isCompatible(other, priority) ||
+                !eyesightMatters && isCompatible(other, priority);
     }
 }
