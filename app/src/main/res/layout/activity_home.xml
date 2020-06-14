@@ -8,70 +8,78 @@
 
     tools:context=".HomeActivity">
 
-    <Button
-        android:id="@+id/button14"
-        android:layout_width="209dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="12dp"
-        android:text="Period 6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button12"
-        tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="209dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="12dp"
-        android:text="Period 3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button10"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="209dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="12dp"
-        android:text="Period 2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button11"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button11"
+        android:id="@+id/p1"
         android:layout_width="209dp"
         android:layout_height="45dp"
         android:layout_marginTop="12dp"
         android:text="Period 1"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText4"
         tools:ignore="MissingConstraints" />
 
+
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/p2"
         android:layout_width="209dp"
         android:layout_height="45dp"
         android:layout_marginTop="12dp"
-        android:text="Period 5"
+        android:text="Period 2"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button13"
+        app:layout_constraintTop_toBottomOf="@+id/p1"
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/p3"
+        android:layout_width="209dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:text="Period 3"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/p4"
         android:layout_width="209dp"
         android:layout_height="45dp"
         android:layout_marginTop="12dp"
         android:text="Period 4"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/p3"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/p5"
+        android:layout_width="209dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:text="Period 5"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p4"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/p6"
+        android:layout_width="209dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:text="Period 6"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p5"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -96,11 +104,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="56dp"
         android:backgroundTint="#E91E1E"
         android:text="Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.108"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button14" />
+        app:layout_constraintTop_toBottomOf="@+id/p1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/AddClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Class"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.859"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText4"
+        app:layout_constraintVertical_bias="0.875" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
