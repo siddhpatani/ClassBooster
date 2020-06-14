@@ -10,14 +10,14 @@ public class Student {
     private String name;
 
     public Student() {
-
+        // TODO Do we need this constructor?
     }
 
     public Student(String name) {
         this.setName(name);
     }
 
-    public Student(String name, boolean outgoing, boolean shy, boolean badEyesight, boolean serious, boolean offTask) {
+    public Student(String name, boolean badEyesight, boolean outgoing, boolean shy, boolean serious, boolean offTask) {
         this(name);
         this.setOutgoing(outgoing);
         this.setShy(shy);
@@ -101,5 +101,10 @@ public class Student {
     public boolean isCompatible(Student other, boolean eyesightMatters, int priority) {
         return eyesightMatters && other.hasBadEyesight() && isCompatible(other, priority) ||
                 !eyesightMatters && isCompatible(other, priority);
+    }
+
+    @Override
+    public String toString() {
+        return name + (badEyesight ? "_" : " ") + (serious ? "s" : " ") + (shy ? "h" : " ") + (outgoing ? "o" : " ") + (offTask ? "t" : " ");
     }
 }
