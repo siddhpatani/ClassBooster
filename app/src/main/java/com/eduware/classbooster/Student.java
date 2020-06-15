@@ -1,6 +1,6 @@
 package com.eduware.classbooster;
 //comment from ansh
-public class Student {
+public class Student implements Assignment {
 
     private boolean outgoing;
     private boolean shy;
