@@ -9,8 +9,9 @@ public class PairPods extends Classroom {
     public PairPods(int studentCount, int span, int depth) {
         super(studentCount);
         double skew = (double) studentCount / span / depth;
-        final int rows = (int) Math.ceil(depth * Math.sqrt(skew));
-        final int cols = (int) Math.ceil(span * Math.sqrt(skew)) / 2;
+        int rows = (int) Math.ceil(depth * Math.sqrt(skew));
+        int cols = (int) Math.ceil(span * Math.sqrt(skew)) / 2;
+        if (rows * cols * 2 < studentCount) cols++;
         chart = new Pair[rows][cols];
         capacity = rows * cols;
         size = studentCount;
@@ -19,7 +20,7 @@ public class PairPods extends Classroom {
     @Override
     public void arrangeStudents(List<Student> students) {
         List<Student> randStudents = new ArrayList<Student>(students);
-        shuffle(students);
+        shuffle(randStudents);
         boolean eyesightMatters = true;
         for (int row = 0; row < chart.length; row++) {
             for (int col = 0; col < chart[0].length; col++) {

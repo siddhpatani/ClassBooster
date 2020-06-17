@@ -14,7 +14,7 @@ public class PairPodsTest {
 
     @Test
     public void testConstructor2() {
-        PairPods classroom2 = new PairPods(25, 4, 3);
+        PairPods classroom2 = new PairPods(25, 1, 1);
         assertEquals(3, classroom2.getColCount());
         assertEquals(5, classroom2.getRowCount());
     }
@@ -31,6 +31,13 @@ public class PairPodsTest {
         PairPods classroom1 = new PairPods(23, 2, 1);
         assertEquals(3, classroom1.getColCount());
         assertEquals(4, classroom1.getRowCount());
+    }
+
+    @Test
+    public void testConstructor5() {
+        PairPods classroom1 = new PairPods(27, 4, 3);
+        assertEquals(3, classroom1.getColCount());
+        assertEquals(5, classroom1.getRowCount());
     }
 
     @Test

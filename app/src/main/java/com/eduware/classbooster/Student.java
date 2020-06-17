@@ -9,9 +9,6 @@ public class Student implements Assignment {
     private boolean offTask;
     private String name;
 
-    public Student() {
-        // TODO Do we need this constructor?
-    }
 
     public Student(String name) {
         this.setName(name);
