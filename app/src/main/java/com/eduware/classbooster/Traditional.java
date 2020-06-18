@@ -8,6 +8,7 @@ public class Traditional extends Classroom {
 
     // precondition: studentCount >= depth && studentCount > 0
     public Traditional(int studentCount, double span, double depth) {
+
         super(studentCount);
         double skew = (double) studentCount / span / depth;
         final int rows = (int) Math.ceil(depth * Math.sqrt(skew));
