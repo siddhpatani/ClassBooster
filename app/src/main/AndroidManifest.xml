@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Periods" />
+<!--        <activity android:name=".Periods" />-->
         <activity android:name=".HomeActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity">
@@ -19,6 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AddStudentActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
