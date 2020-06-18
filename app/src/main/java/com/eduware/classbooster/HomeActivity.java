@@ -78,6 +78,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 else {
                     Toast.makeText(this, "Max periods reached", Toast.LENGTH_SHORT).show();
                 }
+                startActivity(new Intent(this, RatioOfRoom.class));
                 break;
         }
 
