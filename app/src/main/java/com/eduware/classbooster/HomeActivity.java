@@ -20,7 +20,6 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     Button btnP4;
     Button btnP5;
     Button btnP6;
-
     Button btnAddClass;
     FirebaseAuth mFirebaseAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
@@ -57,6 +56,14 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         btnList.add(btnP4);
         btnList.add(btnP5);
         btnList.add(btnP6);
+
+//        btnP1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent b = new Intent(HomeActivity.this, Generator.class);
+//                startActivity(b);
+//            }
+//        });
 
 
     }

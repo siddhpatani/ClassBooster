@@ -61,7 +61,8 @@ public class MainActivity extends AppCompatActivity {
                              startActivity(new Intent(MainActivity.this, HomeActivity.class));
                             }
                         }
-                    });
+                   }
+                );
                 }
                 else {
                     Toast.makeText(MainActivity.this, "Error Occurred!", Toast.LENGTH_SHORT).show();
