@@ -9,6 +9,8 @@ public abstract class Classroom {
     protected int capacity;
     protected int size;
 
+    protected RoomInfo roomInfo;
+
     public Classroom(int studentCount) {
         size = studentCount;
     }
@@ -55,5 +57,13 @@ public abstract class Classroom {
             chart[chart.length - 1][left + i] = chart[chart.length - 1][i];
             chart[chart.length - 1][i] = null;
         }
+    }
+
+    public RoomInfo getRoomInfo(){
+        return roomInfo;
+    }
+
+    public void setRoomInfo(RoomInfo r){
+        roomInfo = r;
     }
 }
