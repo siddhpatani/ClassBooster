@@ -11,6 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".RatioOfRoom"></activity>
+        <activity android:name=".Generator" />
         <!-- activity android:name=".Periods" / -->
         <activity android:name=".HomeActivity" />
         <activity android:name=".LoginActivity" />
