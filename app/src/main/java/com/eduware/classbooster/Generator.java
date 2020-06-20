@@ -145,6 +145,14 @@ public void GenerateTraditional(int row, int col){
         ClassGenerator();
        // root = findViewById(R.id.rootlayout)
        // Toast.makeText(this, "Max students reached", Toast.LENGTH_SHORT).show();
+        btnGenerate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                table.removeAllViews();
+                ClassGenerator();
+
+            }
+        });
 
 
 
